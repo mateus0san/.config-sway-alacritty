@@ -5,3 +5,5 @@ normal = { family = "Iosevka", style = "Regular" }
 bold = { family = "Iosevka", style = "ExtraBold" }
 italic = { family = "Iosevka", style = "Italic" }
 bold_italic = { family = "Iosevka", style = "Bold Italic" }
+[colors.primary]
+background = "#101010"

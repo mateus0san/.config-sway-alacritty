@@ -9,7 +9,6 @@ set $right l
 set $term alacritty 
 # Your preferred application launcher
 set $menu wmenu-run
-
 ### Output configuration
 #
 output * bg ~/.config/sway/wallpaper.jpg fill
@@ -192,6 +191,8 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
     bindsym Print exec grim
+    # Disable or enable touchpad
+    bindsym XF86TouchpadToggle input type:touchpad events toggle enabled disabled
 
 #
 # Status Bar:
@@ -239,5 +240,7 @@ input * xkb_layout "br"
 	# Gaps
 	gaps inner 4 
 	smart_gaps on
+
+seat * hide_cursor when-typing enable
 
 include /etc/sway/config.d/*
